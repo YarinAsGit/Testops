@@ -6,7 +6,7 @@ from checks.base import BaseCheck
 from checks.params import ListParam
 
 
-@register_check(command='local-open-ports')
+@register_check(sub_command='local-open-ports')
 class LocalOpenPortsCheck(BaseCheck):
     """
     Check if there's running ports on the local machine

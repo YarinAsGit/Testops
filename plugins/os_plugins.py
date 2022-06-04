@@ -8,7 +8,7 @@ from checks.base import BaseCheck
 from checks.params import StrParam, ListParam
 
 
-@register_check(command='env-var')
+@register_check(sub_command='env-var')
 class EnvVarCheck(BaseCheck):
     """
     Check if an environment variable exists on the running machine
@@ -23,7 +23,7 @@ class EnvVarCheck(BaseCheck):
                                                                f" is not equal to {self.var_value}"
 
 
-@register_check(command='dirs-exists')
+@register_check(sub_command='dirs-exists')
 class DirsExistCheck(BaseCheck):
     """
     Check if dirs exists on the running machine
@@ -35,7 +35,7 @@ class DirsExistCheck(BaseCheck):
             assert directory_path.is_dir(), f"{directory_path.name} is not a directory"
 
 
-@register_check(command='files-exists')
+@register_check(sub_command='files-exists')
 class FilesExistCheck(BaseCheck):
     """
     Check if files exists on the running machine

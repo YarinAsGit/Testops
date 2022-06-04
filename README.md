@@ -28,7 +28,7 @@ RUN_CHECK files-exists files=["/opt/workdir/config.json"]
 ```
 
 ### Creating commands and sub-commands yourself
-You can use python and creates your own command and sub-commands and preform a custom checks that fir your creteria.
+You can use python and creates your own command and sub-commands and preform a custom checks that fit your creterias.
 
 ## Plugins
 Plugins are groups of checks you can preform. The base plugin contains a lot of useful and common checks you can read about in the documentation.
